@@ -111,13 +111,13 @@
             event.preventDefault();
             const senha = document.getElementById('senhaInput').value;
 
-            if (senha) {
-                alert('Senha digitada: ' + senha);
-                // Aqui você pode adicionar a lógica para verificar a senha, etc.
+            if (senha === '54321') {
+                window.location.href = 'https://one-together.vercel.app/';
             } else {
-                alert('Por favor, digite uma senha.');
+                alert('Senha incorreta. Tente novamente.');
             }
         });
     </script>
+
 </body>
 </html>
